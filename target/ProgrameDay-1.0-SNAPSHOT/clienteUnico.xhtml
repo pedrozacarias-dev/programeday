@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Cadastrar Cliente</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:growl/>
+            <p:panel header="Cadastro Cliente ProgrameDay">
+                <h:panelGrid columns="1">
+                    <p:outputLabel value="Nome"/>
+                    <p:inputText value="#{managerCliente.cliente.nome}"/>
+                    <p:outputLabel value="E-mail" />
+                    <p:inputText value="#{managerCliente.cliente.email}"/>
+                    <p:outputLabel value="Contato" />
+                    <p:inputMask mask="(99) 9 9999-9999" value="#{managerCliente.cliente.contato}"/>
+                </h:panelGrid>               
+                
+                <p:commandButton value="Salvar" actionListener="#{managerCliente.salvar2()}" icon="pi pi-save" update="@form"/>
+            </p:panel>
+
+        </h:form>
+    </h:body>
+</html>

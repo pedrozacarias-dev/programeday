@@ -1,0 +1,6 @@
+com\company\programeday\resources\JakartaEE8Resource.class
+io\programeday\service\ServicoCliente.class
+io\programeday\utilitario\Mensagem.class
+io\programeday\modelo\Cliente.class
+io\programeday\managers\ManagerCliente.class
+com\company\programeday\JakartaRestConfiguration.class
